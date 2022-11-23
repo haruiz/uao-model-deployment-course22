@@ -1,0 +1,22 @@
+h1{
+    background-color: blueviolet;
+}
+
+body{
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#divTerminal{
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    visibility: visible;
+    
+    text-shadow: 10px 0 10px 10px black;
+    border-radius: 5px;
+}

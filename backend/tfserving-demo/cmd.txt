@@ -1,0 +1,8 @@
+docker run -p 8501:8501 --name tfserving_demo \
+        --mount type=bind,source=/Users/haruiz/Workspace/model-deployment-course-uao/tfserving-demo/iris_model,target=/models/iris \
+        --mount type=bind,source=/Users/haruiz/Workspace/model-deployment-course-uao/tfserving-demo/flowers_model,target=/models/flowers \
+        --mount type=bind,source=/Users/haruiz/Workspace/model-deployment-course-uao/tfserving-demo/serving.config,target=/models/serving.config \
+        -t tensorflow/serving \
+        --rest_api_timeout_in_ms=60000 \
+        --enable_batching=true  \
+        --model_config_file=/models/serving.config
